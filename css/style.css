@@ -27,9 +27,6 @@
 @import 'https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i';
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Six+Caps&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Six+Caps&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@600&display=swap');
 
@@ -55,14 +52,13 @@ font-family: 'Open Sans', sans-serif;
   }
 
 h1 {
-    /*font-family: 'Playfair Display', serif;*/
+
     font-family: 'Work Sans', sans-serif;
     font-size: 50px;
     line-height: 70px;
 }
 
 h2 {
-    /*font-family: 'Playfair Display', serif;*/
     font-family: 'Fredericka the Great', cursive;
     color: #003333;
     font-size: 50px;
@@ -70,7 +66,14 @@ h2 {
 }
 
 h3 {
-    /*font-family: 'Playfair Display', serif;*/
+
+    font-family: 'Jura', sans-serif;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+h5 {
+
     font-family: 'Jura', sans-serif;
     font-size: 30px;
     line-height: 40px;
@@ -123,7 +126,7 @@ body {
 }
 
 ul#horizontal-list {
-	min-width: 696px;
+/*	min-width: 696px;*/
 	padding-top: 20px;
 	}
 	ul#horizontal-list li {
@@ -842,6 +845,16 @@ fieldset {
 /* Responsive media queries
 ==================================================*/
 
+@media (max-width: 1024px) {
+  h2 {
+      color: #C88B2A;
+  }
+
+  h5 {
+      color: #D5A250;
+  }
+}
+
 @media (max-width: 991px) {
     .portfolio .categories-grid .categories ul li a {
         padding: 0 2px;
@@ -849,31 +862,59 @@ fieldset {
 }
 
 @media (max-width: 768px) {
+      html, body {
+          position:relative;
+          overflow-x:hidden;
+        }
+
+
     .timeline-event-copy {
         width: 90%;
         left: 2em;
     }
 }
 
+@media (max-width: 575px) {
+  header {
+    height: 90px;
+  }
+
+  nav ul {
+
+      padding: 10px;
+  }
+
+  nav li {
+      display: inline-block;
+      margin: 5px;
+  }
+
+  nav li a {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #C88B2A;
+      font-size: 9px;
+      /*font-weight: bold;*/
+  }
+}
+
 @media (max-width: 500px) {
-    h1 {
-        font-family: 'Playfair Display', serif;
-        font-size: 50px;
-        line-height: 50px;
-    }
+
     h2 {
-        font-family: 'Playfair Display', serif;
-        font-size: 50px;
-        line-height: 50px;
-        color: #ffffff;
+        font-family: 'Playfair Display', serif;;
+        font-size: 40px;
+        line-height: 40px;
+        /*color: #D6DBE0;*/
     }
 
-    h3 {
+    h5 {
         /*font-family: 'Playfair Display', serif;*/
         font-family: 'Jura', sans-serif;
         font-size: 20px;
-        line-height: 40px;
+        line-height: 30px;
+        /*color: #D6DBE0;*/
     }
+
     #home,
     .disply-table {
         height: 600px;
