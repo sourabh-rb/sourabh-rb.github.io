@@ -539,6 +539,32 @@ a.active {
     padding: 100px 0;
     background: #f3f3f3
 }
+
+.skill-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create five equal columns that sits next to each other */
+.skill-col {
+  flex: 20%;
+  max-width: 20%;
+  padding: 0 4px;
+}
+
+.skill-col img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 500px) {
+  .skill-col {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
 /* education section
 ==================================================*/
 
