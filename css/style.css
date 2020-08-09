@@ -29,6 +29,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Six+Caps&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
 
 /*
@@ -135,6 +136,17 @@ ul#horizontal-list {
     font-weight: bold;
     font-size: 20px;
 	}
+
+  .modal {
+    overflow-y:auto !important;
+  }
+
+  p, li {
+    text-align: justify;
+  }
+  p {
+    font-size: 18px;
+  }
 /* preloader
 ==================================================*/
 
@@ -330,6 +342,7 @@ a.active {
 }
 
 
+
 /* home section
 ==================================================*/
 
@@ -391,6 +404,10 @@ a.active {
 
 #experience {
     padding: 100px 0;
+}
+
+.explist {
+  padding-left: 7px;
 }
 
 .experience-row {
@@ -847,11 +864,11 @@ fieldset {
 
 @media (max-width: 1024px) {
   h2 {
-      color: #C88B2A;
+      color: #EE82EE;
   }
 
   h5 {
-      color: #D5A250;
+      color: #EE82EE;
   }
 }
 
@@ -892,7 +909,7 @@ fieldset {
   nav li a {
       text-transform: uppercase;
       letter-spacing: 2px;
-      color: #C88B2A;
+      color: #9370DB;
       font-size: 9px;
       /*font-weight: bold;*/
   }
@@ -901,18 +918,38 @@ fieldset {
 @media (max-width: 500px) {
 
     h2 {
-        font-family: 'Playfair Display', serif;;
+        font-family: 'Jura', sans-serif;
         font-size: 40px;
-        line-height: 40px;
+        line-height: 45px;
         /*color: #D6DBE0;*/
     }
 
+    h3 {
+
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    h4 {
+      font-weight: 300;
+      margin-left: 10px;
+    }
+
+    h4:before {
+        position: absolute;
+        width: 5px;
+        left: -10px;
+        content: "";
+        display: block;
+        height: 2px;
+        background: #425BB5;
+        top: 9px;
+    }
+
     h5 {
-        /*font-family: 'Playfair Display', serif;*/
-        font-family: 'Jura', sans-serif;
+        font-family: 'Architects Daughter', cursive;
         font-size: 20px;
         line-height: 30px;
-        /*color: #D6DBE0;*/
     }
 
     #home,
@@ -933,6 +970,6 @@ fieldset {
         margin: 6px;
     }
     nav li a {
-        font-size: 10px;
+        font-size: 12px;
     }
 }

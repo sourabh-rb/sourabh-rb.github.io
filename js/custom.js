@@ -103,10 +103,15 @@ $(document).ready(function () {
 
     });
 
-    //animatedModal
-    $("#proj01").animatedModal();
-    $("#proj02").animatedModal();
-    $("#proj03").animatedModal();
+    //Modal
+
+    $('.close-modal')
+    .css('cursor', 'pointer')
+    .click(function(e) {
+        e.preventDefault();
+        $('body').css('overflow', 'auto');
+    });
+
 
     // Contact Form
 
