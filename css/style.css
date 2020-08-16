@@ -910,6 +910,10 @@ fieldset {
           overflow-x:hidden;
         }
 
+      video {
+        width: 500px;
+      }
+
 
     .timeline-event-copy {
         width: 90%;
@@ -938,6 +942,10 @@ fieldset {
       color: #9370DB;
       font-size: 9px;
       /*font-weight: bold;*/
+  }
+  video {
+    width: 350px;
+    height: 200px;
   }
 }
 
@@ -976,6 +984,13 @@ fieldset {
         font-family: 'Architects Daughter', cursive;
         font-size: 20px;
         line-height: 30px;
+    }
+
+    h6 {
+        font-family: 'Jura', sans-serif;
+        font-size: 40px;
+        line-height: 45px;
+        /*color: #D6DBE0;*/
     }
 
     #home,
